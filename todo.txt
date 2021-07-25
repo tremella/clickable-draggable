@@ -1,0 +1,14 @@
+TODOS
+
+NOTE: pointerTracker 2.4.0 was broken for me 😢, had to revert to an older version.
+
+- import pointer tracker
+    - set up a tracker, give it very basic reactions (console.logs?)
+
+- create a page with a shape
+    - basics of how to alter x and y? [DONE]
+    - https://www.w3schools.com/howto/howto_js_draggable.asp
+
+- transitions:
+    - what does myImg.style.transition do? google it
+    - looks like the stylesheet updates constantly in pinch-zoom. nice.

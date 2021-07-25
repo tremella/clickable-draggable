@@ -1,0 +1,13 @@
+.circle {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(0, 255, 170);
+    border-radius: 50%;
+    position: absolute;
+    left: 302px;
+    top: 140px;
+}
+
+.canvas{
+
+}
