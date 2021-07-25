@@ -15,7 +15,7 @@ TODOS
     - make a button w/ event listener [DONE]
     - make it interact with the element [DONE]
     - make it return it to the original position [DONE]
-    - make it do that ^ but prettily
+    - make it do that ^ but prettily [DONE 💃]
         - what does myImg.style.transition do? google it
         - alter circle's class with this function?
         - use https://codepen.io/thetallweeks/pen/boinE
@@ -24,13 +24,14 @@ TODOS
     - for 1 finger, have a resize-by-corner thing?
     - how do I handle 2 pointers? check pinch-zoom
 
-REFAC:
+REFAC/BUGS:
     - weight and width and hardcoded to 150. Change this!
+    - it's draggable outside the borders of the canvas div. Fix this!
 
 GOALS
 
 [ DONE ] Drag the element around using a single finger/pointer
-Add a button that smoothly animates the original element back to the centre
+[ DONE ] Add a button that smoothly animates the original element back to the centre
 Resize the element using two fingers (ideally this works nicely with 1.)
 Keep the edges of the target element within a bounded region which is 20px from the edges of the screen (what happens when the screen is resized?)
 Prevent the target element from getting resized to more than 4x, nor less than 1/4 of its original size
