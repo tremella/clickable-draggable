@@ -30,6 +30,7 @@ const pointerTracker = new PointerTracker(element, {
   },
   end : () => {
 	//   console.log('inside end')
+	resetPos()
   },
   // Use raw pointer updates? Pointer events are usually synchronised to requestAnimationFrame.
   // However, if you're targeting a desynchronised canvas, then faster 'raw' updates are better.
@@ -37,7 +38,7 @@ const pointerTracker = new PointerTracker(element, {
 //   rawUpdates: false,
 });
 
-resetPos()
+// resetPos()
 
 // // State of the tracked pointers when they were pressed/touched.
 // pointerTracker.startPointers;
