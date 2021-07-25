@@ -8,6 +8,11 @@
     top: 140px;
 }
 
+.transform {
+    transition: 2s;
+    background-color: cornflowerblue;
+}
+
 .canvas{
     height: 80%;
     width: 80%;

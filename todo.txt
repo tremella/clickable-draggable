@@ -17,6 +17,8 @@ TODOS
     - make it return it to the original position [DONE]
     - make it do that ^ but prettily
         - what does myImg.style.transition do? google it
+        - alter circle's class with this function?
+        - use https://codepen.io/thetallweeks/pen/boinE
 
 - make it resizable
     - for 1 finger, have a resize-by-corner thing?

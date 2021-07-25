@@ -8,19 +8,19 @@ function offsetCoord(coord: number, offset: number) {
 	return coord - offset
 }
 
-function resetPos(){
-	const resetButton = document.getElementById('reset')
-	resetButton.addEventListener('click',()=>{
-		console.log("clicked")
-		element.style["top"] = `140px`
-	  	element.style["left"] = `300px`
-	})
-}
+
+const resetButton = document.getElementById('reset')
+resetButton.addEventListener('click',()=>{
+	element.style["top"] = '140px'
+	element.style["left"] = '300px'
+	// element.classList.remove('transform')
+})
+
 
 const pointerTracker = new PointerTracker(element, {
   start: (pointer, event) => {
+	element.classList.remove('transform')
 	  event.preventDefault();
-	  console.log(pointer, 'pointer')
 	  return true
   },
   move: (previousPointers, changedPointers, event) => {
@@ -29,7 +29,8 @@ const pointerTracker = new PointerTracker(element, {
 	  element.style["left"] = `${offsetCoord(pointer.pageX, (_WIDTH/2))}`
   },
   end : () => {
-	resetPos()
+	element.classList.add('transform')
+	// resetPos()
   },
   // Use raw pointer updates? Pointer events are usually synchronised to requestAnimationFrame.
   // However, if you're targeting a desynchronised canvas, then faster 'raw' updates are better.
@@ -37,7 +38,7 @@ const pointerTracker = new PointerTracker(element, {
 //   rawUpdates: false,
 });
 
-// resetPos()
+
 
 // // State of the tracked pointers when they were pressed/touched.
 // pointerTracker.startPointers;
@@ -50,8 +51,6 @@ const pointerTracker = new PointerTracker(element, {
 // **** //
 // console.log(pointerTracker.currentPointers)
 // const pointer = pointerTracker.currentPointers[0];
-
-// console.log("I'm inside pointer.js")
 
 // pointer.pageX; // x offset from the top of the document
 // pointer.pageY;// y offset from the top of the document
