@@ -1,24 +1,32 @@
 import PointerTracker, { Pointer } from 'pointer-tracker';
 
 const element: HTMLElement = document.getElementById('circle')
+const _HEIGHT = 150
+const _WIDTH = 150
 
-
+function offsetCoord(coord: number, offset: number) {
+	return coord - offset
+}
 const pointerTracker = new PointerTracker(element, {
   start: (pointer, event) => {
-	  if (pointerTracker.currentPointers.length !== 0) {
-		  return false
-	  }
-	  event.preventDefault();
-	  console.log('inside start')
+	//   if (pointerTracker.currentPointers.length !== 0) {
+	// 	  return false
+	//   }
+	  event.preventDefault(); // event - The event related to this pointer.
+	//   console.log('inside start')
+	  console.log(pointer, 'pointer')
+	  console.log(event, 'start event')
 	  return true
-    // Called when a pointer is pressed/touched within the element.
     // pointer - The new pointer. This pointer isn't included in this.currentPointers or
     //    this.startPointers yet.
-    // event - The event related to this pointer.
   },
   move: (previousPointers, changedPointers, event) => {
-	  console.log('inside move')
-    // Called when pointers have moved.
+	  let pointer = changedPointers[0]
+	  console.log(event, 'move event')
+	  console.log(previousPointers, 'previous')
+	  console.log(changedPointers, 'changed')
+	  element.style["top"] = `${offsetCoord(pointer.pageY, (_HEIGHT/2))}`
+	  element.style["left"] = `${offsetCoord(pointer.pageX, (_WIDTH/2))}`
     // previousPointers - The state of the pointers before this event. This contains the same number
     //   of pointers, in the same order, as this.currentPointers and this.startPointers.
     // changedPointers - The pointers that have changed since the last move callback.
