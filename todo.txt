@@ -13,8 +13,8 @@ TODOS
 
 - transition back to center:
     - make a button w/ event listener [DONE]
-    - make it interact with the element
-    - make it return it to the original position
+    - make it interact with the element [DONE]
+    - make it return it to the original position [DONE]
     - make it do that ^ but prettily
         - what does myImg.style.transition do? google it
 

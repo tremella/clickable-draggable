@@ -12,24 +12,23 @@ function resetPos(){
 	const resetButton = document.getElementById('reset')
 	resetButton.addEventListener('click',()=>{
 		console.log("clicked")
+		element.style["top"] = `140px`
+	  	element.style["left"] = `300px`
 	})
 }
 
 const pointerTracker = new PointerTracker(element, {
   start: (pointer, event) => {
-
 	  event.preventDefault();
-	//   console.log(pointer, 'pointer')
+	  console.log(pointer, 'pointer')
 	  return true
   },
   move: (previousPointers, changedPointers, event) => {
 	  let pointer = changedPointers[0]
-	//   console.log(event, 'move event')
 	  element.style["top"] = `${offsetCoord(pointer.pageY, (_HEIGHT/2))}`
 	  element.style["left"] = `${offsetCoord(pointer.pageX, (_WIDTH/2))}`
   },
   end : () => {
-	//   console.log('inside end')
 	resetPos()
   },
   // Use raw pointer updates? Pointer events are usually synchronised to requestAnimationFrame.
