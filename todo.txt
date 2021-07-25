@@ -21,8 +21,9 @@ TODOS
         - use https://codepen.io/thetallweeks/pen/boinE
 
 - make it resizable
-    - for 1 finger, have a resize-by-corner thing?
     - how do I handle 2 pointers? check pinch-zoom
+        - is it really as easy as installing and embedding??
+    - for 1 finger, have a resize-by-corner thing?
 
 REFAC/BUGS:
     - weight and width and hardcoded to 150. Change this!

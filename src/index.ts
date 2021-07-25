@@ -16,6 +16,9 @@ resetButton.addEventListener('click',()=>{
 	// element.classList.remove('transform')
 })
 
+const pinchZoom = document.querySelector('.pinch-zoom');
+
+
 
 const pointerTracker = new PointerTracker(element, {
   start: (pointer, event) => {

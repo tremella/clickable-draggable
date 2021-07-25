@@ -10,7 +10,6 @@
 
 .transform {
     transition: 1s;
-    background-color: cornflowerblue;
 }
 
 .canvas{
@@ -23,8 +22,11 @@ button.reset{
     background-color: cornflowerblue;
     border-radius: 4px;
     border: none;
-    padding: 6px;
-    font-size: small;
-    margin: 5px;
+    padding: 7px;
+    margin: 10px;
     color: aliceblue;
+}
+
+.pinch-zoom{
+    border: solid 3px rgb(98, 171, 255);
 }
