@@ -17,11 +17,13 @@ TODOS
     - make it return it to the original position
     - make it do that ^ but prettily
         - what does myImg.style.transition do? google it
-        
+
 - make it resizable
     - for 1 finger, have a resize-by-corner thing?
     - how do I handle 2 pointers? check pinch-zoom
 
+REFAC:
+    - weight and width and hardcoded to 150. Change this!
 
 GOALS
 

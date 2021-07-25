@@ -1,7 +1,7 @@
 import PointerTracker, { Pointer } from 'pointer-tracker';
 
 const element: HTMLElement = document.getElementById('circle')
-const _HEIGHT = 150
+const _HEIGHT = 150 // make these not hard-coded.
 const _WIDTH = 150
 
 function offsetCoord(coord: number, offset: number) {

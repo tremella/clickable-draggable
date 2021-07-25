@@ -1,7 +1,7 @@
 .circle {
     height: 150px;
     width: 150px;
-    background-color: rgb(0, 255, 170);
+    background-color: rgb(0, 255, 179);
     border-radius: 50%;
     position: absolute;
     left: 300px;
@@ -9,5 +9,17 @@
 }
 
 .canvas{
+    height: 80%;
+    width: 80%;
+    background-color: rgb(255, 248, 234);
+}
 
+button.reset{
+    background-color: cornflowerblue;
+    border-radius: 4px;
+    border: none;
+    padding: 6px;
+    font-size: small;
+    margin: 5px;
+    color: aliceblue;
 }
