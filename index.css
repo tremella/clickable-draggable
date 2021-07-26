@@ -1,6 +1,4 @@
 .circle {
-    /* height: 150px;
-    width: 150px; */
     background-color: rgb(0, 255, 179);
     border-radius: 50%;
     position: absolute;
@@ -9,8 +7,10 @@
 }
 
 body{
-    margin: 20px;
-
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: 0px;
 }
 
 .transform {
@@ -19,8 +19,8 @@ body{
 }
 
 .canvas{
-    height: 85%;
-    width: 85%;
+    height: 90%;
+    width: 90%;
     background-color: rgb(255, 248, 234);
     box-sizing: border-box;
 }
