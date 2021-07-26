@@ -21,13 +21,12 @@ TODOS
         - use https://codepen.io/thetallweeks/pen/boinE
 
 - stop it exceeding canvas
-    - make canvas 20px from edge of screen
+    - make canvas 20px from edge of screen [DONE]
     - target canvas and bounds [DONE]
     - force reset position if bounds transgressed [DONE]
         - extract to function [DONE]
     - embed it in the PT move event [DONE]
     -IF WINDOW IS RESIZED: dynamically recalculate the borders of canvas. [DONE]
-
 
 - make it resizable
     - how do I handle 2 pointers? check pinch-zoom
@@ -36,11 +35,9 @@ TODOS
     - for 1 finger, have a resize-by-corner thing?
 
 REFAC/BUGS:
-    - weight and width and hardcoded to 150. Change this!
-    - it's draggable outside the borders of the canvas div. Fix this!
-    - the ball runs away from the mouse sometimes! This happened post-PZ.
-        - END is never being triggered!
-        - PZ's PT is messing with my PT
+    - weight and width and hardcoded to 150. Change this! [done]
+    - it's draggable outside the borders of the canvas div. Fix this! [done]
+    - pinchZoom is clashing hard with pointerTracker
 
 GOALS
 
