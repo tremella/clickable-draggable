@@ -8,14 +8,21 @@
     top: 140px;
 }
 
+body{
+    margin: 20px;
+
+}
+
 .transform {
     transition: 0.8s;
+    background-color: violet;
 }
 
 .canvas{
-    height: 80%;
-    width: 80%;
+    height: 85%;
+    width: 85%;
     background-color: rgb(255, 248, 234);
+
 }
 
 button.reset{

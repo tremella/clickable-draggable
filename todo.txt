@@ -20,14 +20,27 @@ TODOS
         - alter circle's class with this function?
         - use https://codepen.io/thetallweeks/pen/boinE
 
+- stop it exceeding canvas
+    - identify canvas 
+    - identify canvas bounds
+    - create a function assessing position of circle
+    - embed it in the PT move event
+    -IF WINDOW IS RESIZED: trigger reset button.
+    - ALSO: recalculate the borders of canvas. 
+
+
 - make it resizable
     - how do I handle 2 pointers? check pinch-zoom
         - is it really as easy as installing and embedding??
+        - BUG: pinch zoom inteferes with pointer tracker because there are two pointerTrackers.
     - for 1 finger, have a resize-by-corner thing?
 
 REFAC/BUGS:
     - weight and width and hardcoded to 150. Change this!
     - it's draggable outside the borders of the canvas div. Fix this!
+    - the ball runs away from the mouse sometimes! This happened post-PZ.
+        - END is never being triggered!
+        - PZ's PT is messing with my PT
 
 GOALS
 
