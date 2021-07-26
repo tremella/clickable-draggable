@@ -32,7 +32,7 @@ function offsetCoord(coord: number, offset: number) {
 	return coord - offset
 }
 
-// puts element back in starting pos, when btn clicked
+// puts element back in  starting pos, when btn clicked
 const resetButton = document.getElementById('reset')
 resetButton.addEventListener('click',()=>{
 	element.style["top"] = '140px'
