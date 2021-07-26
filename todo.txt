@@ -21,13 +21,12 @@ TODOS
         - use https://codepen.io/thetallweeks/pen/boinE
 
 - stop it exceeding canvas
-    - identify canvas 
-    - identify canvas bounds
-    - force reset position if counds transgressed
-        - extract to function 
-    - embed it in the PT move event
-    -IF WINDOW IS RESIZED: trigger reset button.
-    - ALSO: recalculate the borders of canvas. 
+    - make canvas 20px from edge of screen
+    - target canvas and bounds [DONE]
+    - force reset position if bounds transgressed [DONE]
+        - extract to function [DONE]
+    - embed it in the PT move event [DONE]
+    -IF WINDOW IS RESIZED: dynamically recalculate the borders of canvas. [DONE]
 
 
 - make it resizable
@@ -48,5 +47,5 @@ GOALS
 [ DONE ] Drag the element around using a single finger/pointer
 [ DONE ] Add a button that smoothly animates the original element back to the centre
 Resize the element using two fingers (ideally this works nicely with 1.)
-Keep the edges of the target element within a bounded region which is 20px from the edges of the screen (what happens when the screen is resized?)
+[DONE] Keep the edges of the target element within a bounded region which is 20px from the edges of the screen (what happens when the screen is resized?)
 Prevent the target element from getting resized to more than 4x, nor less than 1/4 of its original size
