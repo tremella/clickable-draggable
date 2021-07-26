@@ -23,7 +23,8 @@ TODOS
 - stop it exceeding canvas
     - identify canvas 
     - identify canvas bounds
-    - create a function assessing position of circle
+    - force reset position if counds transgressed
+        - extract to function 
     - embed it in the PT move event
     -IF WINDOW IS RESIZED: trigger reset button.
     - ALSO: recalculate the borders of canvas. 

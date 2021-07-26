@@ -53,6 +53,7 @@ const pointerTracker = new PointerTracker(element, {
 	  || (pointer.pageY > (bottom_border - (_HEIGHT/2) ))
 	  || (pointer.pageX < (left_border + (_HEIGHT/2) ))
 	  || (pointer.pageX > (right_border - (_HEIGHT/2) ))){
+		element.classList.add('transform')
 		element.style["top"] = '140px'
 		element.style["left"] = '300px'
 	  }
