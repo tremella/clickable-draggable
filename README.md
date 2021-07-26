@@ -1,5 +1,5 @@
 
-This is an interface with a draggable circle, a reset button, and a box which the circle will remain inside. 
+This is an interface with a draggable circle, a reset button, and a box which the circle will remain inside of. 
 
 This file is bundled with webpack and babel.
 To install, run and use:
