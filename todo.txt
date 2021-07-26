@@ -1,17 +1,17 @@
 TODOS
 
-- import pointer tracker
+- import pointer tracker [DONE]
     - set up a tracker, give it very basic reactions (console.logs?) [DONE]
     - NOTE: pointerTracker 2.4.0 was broken for me 😢, had to revert to an older version.
 
-- create a draggable element
+- create a draggable element [DONE]
     - create a page with a shape
     - basics of how to alter x and y? [DONE]
     - dynamically alter x and y [DONE]
         - looks like the stylesheet updates constantly in pinch-zoom. nice.
     - https://www.w3schools.com/howto/howto_js_draggable.asp
 
-- transition back to center:
+- transition back to center: [DONE]
     - make a button w/ event listener [DONE]
     - make it interact with the element [DONE]
     - make it return it to the original position [DONE]
@@ -20,7 +20,7 @@ TODOS
         - alter circle's class with this function?
         - use https://codepen.io/thetallweeks/pen/boinE
 
-- stop it exceeding canvas
+- stop it exceeding canvas [DONE]
     - make canvas 20px from edge of screen [DONE]
     - target canvas and bounds [DONE]
     - force reset position if bounds transgressed [DONE]
@@ -28,21 +28,23 @@ TODOS
     - embed it in the PT move event [DONE]
     -IF WINDOW IS RESIZED: dynamically recalculate the borders of canvas. [DONE]
 
-- make it resizable
+- make it resizable [NOT DONE]
     - how do I handle 2 pointers? check pinch-zoom
-        - is it really as easy as installing and embedding??
-        - BUG: pinch zoom inteferes with pointer tracker because there are two pointerTrackers.
+        - is it really as easy as installing and embedding?? [nope, had to force webpack]
+        - BUG: pinch zoom messes with pointer tracker because there are two pointerTrackers.
     - for 1 finger, have a resize-by-corner thing?
 
 REFAC/BUGS:
     - weight and width and hardcoded to 150. Change this! [done]
     - it's draggable outside the borders of the canvas div. Fix this! [done]
     - pinchZoom is clashing hard with pointerTracker
+    - extract a few functions
 
 GOALS
-
 [ DONE ] Drag the element around using a single finger/pointer
 [ DONE ] Add a button that smoothly animates the original element back to the centre
+[ DONE ] Keep the edges of the target element within a bounded region which is 20px from the edges of the screen (what happens when the screen is resized?)
+
+[n/a]
 Resize the element using two fingers (ideally this works nicely with 1.)
-[DONE] Keep the edges of the target element within a bounded region which is 20px from the edges of the screen (what happens when the screen is resized?)
 Prevent the target element from getting resized to more than 4x, nor less than 1/4 of its original size
